@@ -27,7 +27,7 @@ public class Principal {
 		boolean enJuego = true;
 		while (enJuego){
 			Juego miJuego = new Juego();
-			miJuego = miJuego.recuperarJuego("AhorcandoAGuybrush/Archivos/partida.dat");
+			miJuego = miJuego.recuperarJuego("files/partida.dat");
 			ControladorJuego controlador = new ControladorJuego(miJuego);
 			VistaImagen vistaImagen = new VistaImagen(miJuego);
 			controlador.setSuperficieDeDibujo(ventana);

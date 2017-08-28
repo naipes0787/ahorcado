@@ -29,14 +29,14 @@ public class ControladorJuego {
 						} catch (JuegoPerdidoException e) {
 							this.miJuego.setHighScore(miJuego.obtenerPuntajeJugador());
 							dibujar();
-							this.miJuego.guardarJuego("AhorcandoAGuybrush/Archivos/partida.dat");
+							this.miJuego.guardarJuego("files/partida.dat");
 							break;
 						}
 					}catch (JuegoGanadoException e){
 						this.miJuego.setHighScore(miJuego.obtenerPuntajeJugador());
 						this.miJuego.juegoGanado();
 						dibujar();
-						this.miJuego.guardarJuego("AhorcandoAGuybrush/Archivos/partida.dat");
+						this.miJuego.guardarJuego("AhorcandoAGuybrush/files/partida.dat");
 						break;
 					}
 					Thread.sleep(intervaloSimulacion);
